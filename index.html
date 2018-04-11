@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Better Things Digital</title>
+  <meta name="description" content="A digital studio based in the Alps. We work with you to build great products." />
+  <meta name="keywords" content="better things, digital, backend, frontend, webservice, development, agile, workshops, node.js, docker, graphql, rest, reactjs, elasticsearch, redis, postgres, mongodb, sustainable, maintainable, scalable, stable, efficient, solution-oriented, performant, user-centered">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.png" />
+  <style>
+    /* fonts from google fonts */
+
+    /* latin-ext */
+
+    @font-face {
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-weight: 300;
+      src: local('Roboto Mono Light'), local('RobotoMono-Light'), url(https://fonts.gstatic.com/s/robotomono/v5/L0xkDF4xlVMF-BfR8bXMIjDgiWq_f7-pAVU_Lrg.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+
+    @font-face {
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-weight: 300;
+      src: local('Roboto Mono Light'), local('RobotoMono-Light'), url(https://fonts.gstatic.com/s/robotomono/v5/L0xkDF4xlVMF-BfR8bXMIjDgiWqxf7-pAVU_.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* latin-ext */
+
+    @font-face {
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Roboto Mono'), local('RobotoMono-Regular'), url(https://fonts.gstatic.com/s/robotomono/v5/L0x5DF4xlVMF-BfR8bXMIjhFq3-cXbKDO1w.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+
+    @font-face {
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Roboto Mono'), local('RobotoMono-Regular'), url(https://fonts.gstatic.com/s/robotomono/v5/L0x5DF4xlVMF-BfR8bXMIjhLq3-cXbKD.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* latin-ext */
+
+    @font-face {
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-weight: 500;
+      src: local('Roboto Mono Medium'), local('RobotoMono-Medium'), url(https://fonts.gstatic.com/s/robotomono/v5/L0xkDF4xlVMF-BfR8bXMIjC4iGq_f7-pAVU_Lrg.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+
+    @font-face {
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-weight: 500;
+      src: local('Roboto Mono Medium'), local('RobotoMono-Medium'), url(https://fonts.gstatic.com/s/robotomono/v5/L0xkDF4xlVMF-BfR8bXMIjC4iGqxf7-pAVU_.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* latin-ext */
+
+    @font-face {
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-weight: 700;
+      src: local('Roboto Mono Bold'), local('RobotoMono-Bold'), url(https://fonts.gstatic.com/s/robotomono/v5/L0xkDF4xlVMF-BfR8bXMIjDwjmq_f7-pAVU_Lrg.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+
+    @font-face {
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-weight: 700;
+      src: local('Roboto Mono Bold'), local('RobotoMono-Bold'), url(https://fonts.gstatic.com/s/robotomono/v5/L0xkDF4xlVMF-BfR8bXMIjDwjmqxf7-pAVU_.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* ************** */
+
+    body {
+      color: #172B4D;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 105%;
+      font-weight: 300;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .unicorn {
+      border-color: #172B4D;
+      color: #172B4D;
+      fill: #172B4D;
+      animation-name: unicorn;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;
+      animation-timing-function: steps(30);
+    }
+
+    /* colors from https://atlassian.design/guidelines/brand/color-1 */
+
+    @keyframes unicorn {
+      0% {
+        border-color: #172B4D;
+        color: #172B4D;
+        fill: #172B4D;
+      }
+      20% {
+        border-color: #0052CC;
+        color: #0052CC;
+        fill: #0052CC;
+      }
+      40% {
+        border-color: #FF5630;
+        color: #FF5630;
+        fill: #FF5630;
+      }
+      60% {
+        border-color: #36B37E;
+        color: #36B37E;
+        fill: #36B37E;
+      }
+      80% {
+        border-color: #6554C0;
+        color: #6554C0;
+        fill: #6554C0;
+      }
+      100% {
+        border-color: #172B4D;
+        color: #172B4D;
+        fill: #172B4D;
+      }
+    }
+
+    html {
+      box-sizing: border-box;
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 0.8em;
+      margin: 1em 0;
+    }
+
+    * {
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    section {
+      padding: 2em 2em 4em;
+      text-align: center;
+    }
+
+    .alternate-section {
+      background-color: #edf0f4;
+    }
+
+    header {
+      padding: 2em;
+      text-align: center;
+    }
+
+    footer {
+      font-size: 0.75em;
+      padding: 2em;
+      text-align: center;
+    }
+
+    .hashtags {
+      color: #8993A4;
+      font-size: 0.85em;
+    }
+
+    .button {
+      border: 3px solid #172B4D;
+      padding: 0.8em 2em;
+      font: inherit;
+      text-decoration: none;
+      font-weight: normal;
+      display: inline-block;
+      margin-top: 2em;
+      letter-spacing: 0.15em;
+    }
+
+    h2 {
+      font-weight: inherit;
+      font-size: 1.3em;
+      margin-bottom: 1.5em;
+    }
+
+    h4 {
+      font-weight: normal;
+      font-size: 0.9em;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+
+    h2 strong {
+      font-weight: normal;
+      white-space: nowrap;
+    }
+
+    .container {
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .links {
+      list-style: none;
+    }
+
+    .links li {
+      margin: 6px;
+      display: inline;
+    }
+
+    .links a {
+      text-decoration: none;
+    }
+
+    .attribution {
+      margin-top: 5em;
+    }
+
+    .attribution,
+    .attribution a {
+      color: #B3BAC5;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class='container'>
+      <svg class='unicorn' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 1024 1024" width="48" height="48">
+        <defs>
+          <clipPath id="cp_1">
+            <rect width="1024" height="1024" />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#cp1)">
+          <polygon points="1024,955.405,0,955.145,512.225,68.595" />
+          <path d="M 341.333 452.793 L 512.075 157.276 L 682.667 452.793 L 625.414 551.414 L 568.5 452.908 L 341.333 452.793 Z " fill="rgb(255,255,255)"
+            vector-effect="non-scaling-stroke" stroke-width="1" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"
+          />
+        </g>
+      </svg>
+    </div>
+  </header>
+  <section>
+    <div class='container'>
+      <h2>A
+        <strong class='unicorn'>digital studio</strong> based in the Alps. We work with you to build great products that have an impact on people.</h2>
+      <p class='hashtags'>#backend #frontend #webservice #development #design #agile #workshops</p>
+      <p>
+        <a class='button unicorn' href='mailto:hi@betterthings.digital'>WORK WITH US</a>
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class='container'>
+      <h2>We love tech. But we only choose what's right for the job. Here's a selection of what we've used recently.</h2>
+      <p class='hashtags'>#node.js #docker #graphql #rest #reactjs #elasticsearch #redis #postgres</p>
+      <p>
+        <a class='button unicorn' href='mailto:hi@betterthings.digital'>WORK WITH US</a>
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class='container'>
+      <!--<h2>To deliver the right solution, we first understand and validate the problem.</h2>-->
+      <h2>Our objective is to build quality software that performs well, improves user satisfaction, and helps you achieve your
+        business goals.</h2>
+      <p class='hashtags'>#sustainable #maintainable #scalable #stable #efficient #solution-oriented #performant #user-centered</p>
+      <p>
+        <a class='button unicorn' href='mailto:hi@betterthings.digital'>WORK WITH US</a>
+      </p>
+    </div>
+  </section>
+  <footer>
+    <ol class='links'>
+      <li>
+        <a href='https://github.com/betterthingsdigital'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" style='height:28px' aria-label='GitHub'>
+            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href='https://medium.com/better-things-digital'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style='height:28px' aria-label='Medium'>
+            <path d="M0 32v448h448V32H0zm372.2 106.1l-24 23c-2.1 1.6-3.1 4.2-2.7 6.7v169.3c-.4 2.6.6 5.2 2.7 6.7l23.5 23v5.1h-118V367l24.3-23.6c2.4-2.4 2.4-3.1 2.4-6.7V199.8l-67.6 171.6h-9.1L125 199.8v115c-.7 4.8 1 9.7 4.4 13.2l31.6 38.3v5.1H71.2v-5.1l31.6-38.3c3.4-3.5 4.9-8.4 4.1-13.2v-133c.4-3.7-1-7.3-3.8-9.8L75 138.1V133h87.3l67.4 148L289 133.1h83.2v5z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ol>
+    <p class='attribution'>Icons by
+      <a href='https://fontawesome.com/license'>Font Awesome</a>
+    </p>
+  </footer>
+</html>
