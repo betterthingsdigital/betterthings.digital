@@ -95,6 +95,12 @@
       }
     }
 
+    a {
+      color: #6554C0;
+      font-weight: normal;
+      text-decoration: none;
+    }
+
     html {
       box-sizing: border-box;
       font-size: 18px;
@@ -114,7 +120,7 @@
 
     section {
       padding: 2em 2em 4em;
-      text-align: center;
+      text-align: left;
     }
 
     .alternate-section {
@@ -148,6 +154,11 @@
       letter-spacing: 0.15em;
     }
 
+    h1 {
+      font-weight: normal;
+      margin-top: 2em;
+    }
+
     h2 {
       font-weight: inherit;
       font-size: 1.3em;
@@ -159,6 +170,10 @@
       font-size: 0.9em;
       margin-top: 1em;
       margin-bottom: 0.5em;
+    }
+
+    h4:first-child {
+      margin-top: 0;
     }
 
     h2 strong {
@@ -192,6 +207,7 @@
 
     .impressum a {
       color: inherit;
+      font-weight: inherit;
       text-decoration: none;
     }
 
@@ -212,50 +228,162 @@
 <body>
   <header>
     <div class='container'>
-      <svg class='unicorn' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 1024 1024" width="48" height="48">
-        <defs>
-          <clipPath id="cp_1">
-            <rect width="1024" height="1024" />
-          </clipPath>
-        </defs>
-        <g clip-path="url(#cp1)">
-          <polygon points="1024,955.405,0,955.145,512.225,68.595" />
-          <path d="M 341.333 452.793 L 512.075 157.276 L 682.667 452.793 L 625.414 551.414 L 568.5 452.908 L 341.333 452.793 Z " fill="rgb(255,255,255)"
-            vector-effect="non-scaling-stroke" stroke-width="1" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"
-          />
-        </g>
-      </svg>
+      <a href="/">
+        <svg class='unicorn' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 1024 1024" width="48" height="48">
+          <defs>
+            <clipPath id="cp_1">
+              <rect width="1024" height="1024" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#cp1)">
+            <polygon points="1024,955.405,0,955.145,512.225,68.595" />
+            <path d="M 341.333 452.793 L 512.075 157.276 L 682.667 452.793 L 625.414 551.414 L 568.5 452.908 L 341.333 452.793 Z " fill="rgb(255,255,255)"
+              vector-effect="non-scaling-stroke" stroke-width="1" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"
+            />
+          </g>
+        </svg>
+      </a>
+    </div>
+    <div>
+      <h1>Datenschutz</h1>
     </div>
   </header>
   <section>
     <div class='container'>
-      <h2>A
-        <strong class='unicorn'>digital studio</strong> based in the Alps. We work with you to build great products that have an impact on people.</h2>
-      <p class='hashtags'>#backend #frontend #webservice #development #design #agile #workshops</p>
+      <h4>Wenn du unsere Internetauftritte besuchst</h4>
       <p>
-        <a class='button unicorn' href='mailto:hi@betterthings.digital'>WORK WITH US</a>
+        Erstmal danke für dein Interesse! Wir hosten unsere Website bei Netlify 
+        und verwenden Cloudflare um sie schneller und sicherer zu machen. 
+      </p>
+      <p>
+        Wir sind auf Twitter, Facebook, Medium und anderen Online-Services aktiv. 
+        Wir extrahieren von unseren Followern und Fans keine Daten aus diesen Diensten. 
+        Ob du über diese Dienste mit uns in Kontakt treten möchtest steht dir frei. 
+        Deine Privatssphäre ist uns wichtig. 
+        Deshalb haben wir auf unserer Website keine Widgets, wie beispielsweise den 
+        Like-Button von Facebook, integriert.
+      </p>
+      <p>
+        Unsere Website enthält jedoch Links zu anderen Websites. Diese Websites 
+        unterliegen nicht unserer Kontrolle und unterliegen nicht unseren 
+        Datenschutzhinweisen. Diese Websites haben wahrscheinlich eigene 
+        Datenschutzhinweise. Wir sind nicht verantwortlich für diese Websites 
+        und bieten Links zu diesen Websites ausschließlich zu deiner Bequemlichkeit 
+        an. Du erkennst an, dass deine Nutzung und der Zugriff auf diese Websites 
+        ausschließlich deinem Risiko unterliegt. Es liegt in deiner Verantwortung, 
+        die Datenschutzhinweise dieser Websites zu überprüfen, um zu sehen, wie sie 
+        mit deinen persönlichen Daten umgehen.
       </p>
     </div>
   </section>
   <section>
     <div class='container'>
-      <h2>We love tech. But we only choose what's right for the job. Here's a selection of what we've used recently.</h2>
-      <p class='hashtags'>#node.js #docker #graphql #rest #reactjs #elasticsearch #redis #postgres</p>
+      <h4>Wenn wir eine Email von dir erhalten</h4>
       <p>
-        <a class='button unicorn' href='mailto:hi@betterthings.digital'>WORK WITH US</a>
+        Wir verwenden die G Suite von Google. Darin verwalten wir unter anderem 
+        alle unsere Emails, Kontakte, Termine und Dokumente.
+      </p>
+      <p>
+        Falls wir vorhaben dich in Zukunft von uns aus via Email zu kontaktieren erhältst du 
+        eine kurze Email in der wir dich bitten uns dazu deine Einwilligung zu geben.
+        Deine Einwilligung wird von uns abgelegt.
       </p>
     </div>
   </section>
   <section>
     <div class='container'>
-      <!--<h2>To deliver the right solution, we first understand and validate the problem.</h2>-->
-      <h2>Our objective is to build quality software that performs well, improves user satisfaction, and helps you achieve your
-        business goals.</h2>
-      <p class='hashtags'>#sustainable #maintainable #scalable #stable #efficient #solution-oriented #performant #user-centered</p>
+      <h4>Wenn wir gemeinsam ein Projekt angehen</h4>
       <p>
-        <a class='button unicorn' href='mailto:hi@betterthings.digital'>WORK WITH US</a>
+        Sollte ein gemeinsames Projekt aus unserer Beziehung herausgehen, so werden wir 
+        im Projektvertrag regeln wer dich aus welchem Grund über welchen Kommunikationskanal 
+        erreichen soll und somit auch Zugriff auf die jeweiligen Kontaktdaten von dir 
+        haben muss.
       </p>
+      <p>
+        Wir legen projektbezogene Daten in unserer Google Drive oder in ausgedruckter
+        Form so ab, dass nur Geschäftsführer und Gesellschafter darauf Zugriff haben. 
+        Andere Mitarbeiter haben nur Zugriff auf Daten, die sie zur Erfüllung
+        ihrer Aufgaben im Projekt benötigen.
+      </p>
+      <p>
+        Für die Kommunikation und das Projektmanagement während des Projekts 
+        verwenden wir diverse Online-Tools. Wir werden uns zu Beginn des Projekts 
+        gemeinsam für die entsprechenden Tools entscheiden. Solltest du bei einem
+        der vorgeschlagenen Tools Bedenken haben lass es uns wissen.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class='container'>
+      <h4>Wenn wir dir eine Rechnung stellen</h4>
+      <p>
+        Die Rechnung wird von einem Geschäftsführer oder einer Assistenzkraft erstellt 
+        und sofern im Projektvertrag nicht anders geregelt per Email an dich versendet.
+        Als guter und hoffentlich zufriedener Kunde überweist du uns den fälligen Betrag
+        auf unser Konto bei der Sparkasse Dornbirn. Bei der ordnungsgemäßen Führung
+        unseres Unternehmens ist uns ein Steuerberater/Buchhalter behilflich. Damit
+        sie ihre Aufgaben erfüllen können haben sie Einsicht in alle Rechnungen.
+      </p>
+      <p>
+        Wir legen Rechnungen gemeinsam mit den anderen Projektdaten ab.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class='container'>
+      <h4>Wenn wir eine Rechnung von dir erhalten</h4>
+      <p>
+        Eingehende Rechnungen werden von einem Geschäftsführer oder einer Assistenzkraft
+        bearbeitet. Bei der ordnungsgemäßen Führung
+        unseres Unternehmens ist uns ein Steuerberater/Buchhalter behilflich. Damit
+        sie ihre Aufgaben erfüllen können haben sie Einsicht in alle Rechnungen.
+      </p>
+      <p>
+        Wir legen Rechnungen gemeinsam mit den anderen Projektdaten ab.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class='container'>
+      <h4>Wie lange wir Daten aufbewahren</h4>
+      <p>
+        Für einige Daten besteht eine gesetzliche Mindestaufbewahrungsdauer. Andere
+        Daten, die nicht unter diesen gesetzlichen Rahmen fallen speichern wir 
+        solange, wie wir sie benötigen. Sollten wir beispielsweise gerade gemeinsam
+        an einem Projekt arbeiten brauchen wir selbstverständlich die Info wie wir
+        dich erreichen können und wohin wir Rechnungen senden müssen. Ansonsten
+        gehen wir in unregelmäßigen Abständen mehrmals jährlich unseren Datenbestand
+        (Emails, Notizen, Kontakte, etc.) durch und löschen alles was wir gerade oder in 
+        absehbarer Zukunft nicht benötigen.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class='container'>
+      <h4>Auskunft, Berichtigung und Löschung deiner persönlichen Daten</h4>
+      <p>
+        Möchtest du erfahren welche persönlichen Daten wir über dich gespeichert haben
+        send uns eine Email an <a href="mailto:hi@betterthings.digital">hi@betterthings.digital</a>.
+        Über den gleichen Weg kannst du uns mitteilen, dass sich Daten von dir geändert haben 
+        oder du möchtest dass wir über dich gespeicherte Daten löschen.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class='container'>
+      <h4>Du darfst uns Emails senden</h4>
+      <p>
+        Über Projektideen, Anfragen, etc. freuen wir uns jederzeit. Du darfst uns 
+        diesbezüglich gerne eine Email an hi@betterthings.digital senden.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class='container'>
+      <h4>Interessante Links zu von uns genutzten Diensten</h4>
+      <p>• <a href="https://www.cloudflare.com/gdpr/introduction/">Datenschutz bei Cloudflare</a></p>
+      <p>• <a href="https://cloud.google.com/security/gdpr/">G Suite &amp; Google Cloud Platform Commitments to GDPR</a></p>
     </div>
   </section>
   <footer>
