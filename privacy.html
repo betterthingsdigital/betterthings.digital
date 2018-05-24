@@ -154,6 +154,13 @@
       letter-spacing: 0.15em;
     }
 
+    code {
+      color: #6554C0;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.9em;
+      font-weight: normal;
+    }
+
     h1 {
       font-weight: normal;
       margin-top: 2em;
@@ -217,7 +224,11 @@
     }
 
     .privacy,
-    .privacy a,
+    .privacy a {
+      color: #42526E;
+      text-decoration: none;
+    }
+
     .attribution,
     .attribution a {
       color: #B3BAC5;
@@ -254,7 +265,8 @@
       <h4>Wenn du unsere Internetauftritte besuchst</h4>
       <p>
         Erstmal danke für dein Interesse! Wir hosten unsere Website bei Netlify 
-        und verwenden Cloudflare um sie schneller und sicherer zu machen. 
+        und verwenden Cloudflare um sie schneller und sicherer zu machen. Cloudflare
+        benötigt für ihre Security-Features ein Cookie (<code>__cfduid</code>). <a href="https://support.cloudflare.com/hc/en-us/articles/200170156-What-does-the-Cloudflare-cfduid-cookie-do-">Hier</a> kannst mehr darüber lesen.
       </p>
       <p>
         Wir sind auf Twitter, Facebook, Medium und anderen Online-Services aktiv. 
@@ -375,7 +387,7 @@
       <h4>Du darfst uns Emails senden</h4>
       <p>
         Über Projektideen, Anfragen, etc. freuen wir uns jederzeit. Du darfst uns 
-        diesbezüglich gerne eine Email an hi@betterthings.digital senden.
+        diesbezüglich gerne eine Email an <a href="mailto:hi@betterthings.digital">hi@betterthings.digital</a> senden.
       </p>
     </div>
   </section>
@@ -383,6 +395,7 @@
     <div class='container'>
       <h4>Interessante Links zu von uns genutzten Diensten</h4>
       <p>• <a href="https://www.cloudflare.com/gdpr/introduction/">Datenschutz bei Cloudflare</a></p>
+      <p>• <a href="https://www.cloudflare.com/cookie-policy/">Cloudflare's Cookie Policy</a></p>
       <p>• <a href="https://cloud.google.com/security/gdpr/">G Suite &amp; Google Cloud Platform Commitments to GDPR</a></p>
     </div>
   </section>
